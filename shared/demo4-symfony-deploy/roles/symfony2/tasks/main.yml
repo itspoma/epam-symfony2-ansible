@@ -1,0 +1,10 @@
+---
+- include: structure_pre.yml
+
+- include: checkout.yml
+- include: composer.yml
+- include: migrations.yml
+- include: assets.yml
+- include: cache.yml
+
+- include: structure_post.yml

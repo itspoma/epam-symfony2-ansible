@@ -1,0 +1,15 @@
+---
+- name: Create the release {{symfony2_project_release}} directory.
+  file: state=directory path={{symfony2_project_root}}/releases/{{symfony2_project_release}}
+
+- name: Create the shared directory.
+  file: state=directory path={{symfony2_project_root}}/shared
+
+- name: Create the shared/app/config directory.
+  file: state=directory path={{symfony2_project_root}}/shared/app/config
+
+- name: Create the shared/web/uploads directory.
+  file: state=directory path={{symfony2_project_root}}/shared/web/uploads
+
+- name: Create the shared/app/logs directory.
+  file: state=directory path={{symfony2_project_root}}/shared/app/logs

@@ -1,0 +1,3 @@
+---
+- name: Create symlink
+  file: state=link src={{symfony2_project_root}}/releases/{{symfony2_project_release}} path={{symfony2_project_root}}/current
