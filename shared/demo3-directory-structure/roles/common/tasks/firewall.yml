@@ -1,0 +1,8 @@
+---
+- name: disable firewall
+  shell: "{{ item }}"
+  register: result
+  changed_when: "result.rc != 0"
+  with_items:
+    - service iptables stop
+    - chkconfig iptables off
