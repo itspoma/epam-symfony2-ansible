@@ -1,0 +1,10 @@
+[all:children]
+    web-local
+    db-local
+
+
+[web-local]
+    vagrant
+
+[db-local]
+    vagrant
